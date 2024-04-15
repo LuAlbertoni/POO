@@ -1,6 +1,11 @@
 ## Enunciado
 
-Exercício de composição: Dos métodos, crie a lógica que for conveniente a cada classe
+Exercício de Composição
+- Seguir o diagrama de classes
+- Criar as classes de acordo com o diagrama
+- Usar encapsulamento completo (com tratamento de valores digitados) para o atributo saldo da classe Poupança
+- Usar construtor
+- Realizar instâncias necessárias para testar as classes
 
 ## Classes
 

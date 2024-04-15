@@ -11,11 +11,28 @@ namespace ComposicaoBanco
 
         public Poupanca(double saldoInicial)
         {
+            if (saldoInicial < 0)
+            {
+                Console.WriteLine(
+                    "Saldo inicial inválido. O saldo inicial deve ser maior ou igual a zero."
+                );
+
+                return;
+            }
+
             Saldo = saldoInicial;
         }
 
         public void Depositar(double valor)
         {
+            if (valor < 0)
+            {
+                Console.WriteLine(
+                    "Valor inválido. O valor do depósito deve ser maior ou igual a zero."
+                );
+                return;
+            }
+
             Saldo += valor;
             Console.WriteLine($"Depósito de {valor:c} realizado com sucesso.");
         }
