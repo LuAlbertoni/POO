@@ -20,9 +20,9 @@ d2.Admitir(a2);
 d2.Admitir(c2);
 
 // Adicionando dependentes aos funcionários
-a1.AdicionarDependente(new Dependente("Filho1", 5));
-a1.AdicionarDependente(new Dependente("Filho2", 8));
-c1.AdicionarDependente(new Dependente("Esposa", 30));
+a1.AdicionarDependente(new Dependente(1, "Filho1", 5));
+a1.AdicionarDependente(new Dependente(2, "Filho2", 8));
+c1.AdicionarDependente(new Dependente(3, "Esposa", 30));
 
 // Removendo dependente
 a1.RemoverDependente("Filho1");

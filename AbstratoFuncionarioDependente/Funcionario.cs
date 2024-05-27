@@ -34,7 +34,10 @@ namespace AbstratoFuncionario
 
         public void AdicionarDependente(Dependente dependente)
         {
-            Dependentes.Add(dependente);
+            if (dependente.VerificarMaioridade() == false)
+                Dependentes.Add(dependente);
+            else
+                Console.WriteLine("O dependente não pôde ser adicionado");
         }
 
         public void RemoverDependente(string nome)
